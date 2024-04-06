@@ -53,9 +53,8 @@ header {
 }
 /* Seccion 1 */
 article > section:nth-child(1) {
-    background-image: -webkit-gradient(linear, right bottom, left top, from(rgba(55,185,30,0.83)), to(rgba(25,59,240,0.83))), url(https://raw.githubusercontent.com/santiagotona/vaneily/main/imagenes/bar.jpg);
-    background-image: -o-linear-gradient(right bottom, rgba(55,185,30,0.83), rgba(25,59,240,0.83)), url(https://raw.githubusercontent.com/santiagotona/vaneily/main/imagenes/bar.jpg);
-    background-image: linear-gradient(to left top, rgba(55,185,30,0.83), rgba(25,59,240,0.83)), url(https://raw.githubusercontent.com/santiagotona/vaneily/main/imagenes/bar.jpg);
+    
+    background-image: url(https://raw.githubusercontent.com/santiagotona/vaneily/main/imagenes/bar.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right;
