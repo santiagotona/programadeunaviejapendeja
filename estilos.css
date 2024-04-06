@@ -246,9 +246,9 @@ article > section:nth-child(4) {
 }
 /* seccion 5*/
 article > section:nth-child(5) {
-	background-image: -webkit-gradient(linear, right bottom, left top, from(rgba(16, 123, 167, 0.8)), to(rgba(16, 123, 167, 0.76))), url(../imagenes/barmaschido.jpg);
-	background-image: -o-linear-gradient(right bottom, rgba(16, 123, 167, 0.8), rgba(16, 123, 167, 0.76)), url(../imagenes/barmaschido.jpg);
-	background-image: linear-gradient(to left top, rgba(16, 123, 167, 0.8), rgba(16, 124, 167, 0.80)), url(../imagenes/barmaschido.jpg);
+	background-image: -webkit-gradient(linear, right bottom, left top, from(rgba(16, 123, 167, 0.8)), to(rgba(16, 123, 167, 0.76))), url(https://raw.githubusercontent.com/santiagotona/vaneily/main/imagenes/barmaschido.jpg);
+	background-image: -o-linear-gradient(right bottom, rgba(16, 123, 167, 0.8), rgba(16, 123, 167, 0.76)), url(https://raw.githubusercontent.com/santiagotona/vaneily/main/imagenes/barmaschido.jpg);
+	background-image: linear-gradient(to left top, rgba(16, 123, 167, 0.8), rgba(16, 124, 167, 0.80)), url(https://raw.githubusercontent.com/santiagotona/vaneily/main/imagenes/barmaschido.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center right;
