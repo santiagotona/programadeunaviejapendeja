@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedes del Restaurante</title>
+    <style>
+        body {
+            max-width: 100%;
+            min-width: none;
+            max-height: 100%;
+            min-height: 0%;
+            background-image: url(imagenes/bellasartes.png);
+            width: 100%;
+            height: 100%;
+            background-size: 1080px;
+            
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .sede {
+            width: calc(25% - 20px); /* Ajusta el tamaño de la sede */
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        .sede img {
+            width: 100%; /* Ajusta el tamaño de la imagen */
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .sede .contenido {
+            text-align: center;
+        }
+        .rol {
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sede">
+            <h2>Sede 1 - Condesa</h2>
+            <div class="rol">
+                <h3>Trabajos Disponibles:</h3>
+                <ul>
+                    <li>Bartender</li>
+                    <li>Bartender Asistente</li>
+                    <li>Ayudante de Barra</li>
+                </ul>
+            </div>
+            <p>Ubicación: Av. México 123, Condesa, CDMX</p>
+            <a href="https://maps.app.goo.gl/95ChieK8tebNCRF18"><img src="imagenes/condesa.jpg" alt="Condesa"></a>
+            
+        </div>
+
+        <div class="sede">
+            <h2>Sede 2 - Polanco</h2>
+            <div class="rol">
+                <h3>Trabajos Disponibles:</h3>
+                <ul>
+                    <li>Bartender Principal</li>
+                    <li>Bartender Junior</li>
+                    <li>Ayudante de Bartender</li>
+                </ul>
+            </div>
+            <p>Ubicación: Av. Polanco 456, Polanco, CDMX</p>
+            
+            <a href="https://maps.app.goo.gl/USnmzTs2rtMnFpJC8"><img src="imagenes/polanco.jpg" alt="Polanco"></a>
+        </div>
+
+        <div class="sede">
+            <h2>Sede 3 - Roma Norte</h2>
+            <div class="rol">
+                <h3>Trabajos Disponibles:</h3>
+                <ul>
+                    <li>Maestro Bartender</li>
+                    <li>Aprendiz de Bartender</li>
+                    <li>Bartender Experto</li>
+                </ul>
+            </div>
+            <p>Ubicación: Calle Roma 789, Roma Norte, CDMX</p>
+            
+            <a href="https://maps.app.goo.gl/t2rS6vgihYGBdauz8"><img src="imagenes/roma.jpg" alt="Roma Norte"></a>
+        </div>
+
+        <div class="sede">
+            <h2>Sede 4 - Centro Histórico</h2>
+            <div class="rol">
+                <h3>Trabajos Disponibles:</h3>
+                <ul>
+                    <li>Barman</li>
+                    <li>Bartender de Temporada</li>
+                    <li>Bartender de Eventos</li>
+                </ul>
+            </div>
+            <p>Ubicación: Calle Centro 101, Centro Histórico, CDMX</p>
+            
+            <a href="https://maps.app.goo.gl/J9UghvAWZaTRBCa47"><img src="imagenes/centro.jpg" alt="Centro Histórico"></a>
+        </div>
+        
+    </div>
+</body>
+</html>
