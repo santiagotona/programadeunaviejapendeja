@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materias de un curso de bartender</title>
+    <link rel="stylesheet" href="styles.css">
+<style type="text/css" id="dcoder_stylesheet">body {
+    background-image: url(imagenes/fondo.mp4);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #06678d50;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 249, 249, 0.1);
+}
+
+li:hover {
+    background-color: #0752f575;
+}
+
+.horario {
+    display: none;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+.semestre {
+    color: #fff;
+}
+.horario.active {
+    display: block;
+}
+
+#video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1000;
+            background-size: cover;
+        }
+</style></head>
+<body>
+    <video autoplay muted loop id="video-background">
+        <source src="imagenes/fondo2.mp4" type="video/mp4">
+        Tu navegador no admite la reproducción de videos.
+    </video>
+    <div class="container">
+        <h1>Materias de un curso de bartender</h1>
+        
+        <div class="semestre" id="semestre1">
+            <h2 onclick="toggleMaterias('semestre1')">Semestre 1</h2>
+            <ul>
+                <li>Introducción a la coctelería</li>
+                <li>Historia de los cócteles</li>
+                <li>Tipos de licores y destilados</li>
+            </ul>
+            <div class="horario" id="horario1">
+                <p>Lunes: 12:00 - 16:00 | 16:00 - 20:00</p>
+                <p>	Martes: 12:00 - 16:00 | 16:00 - 20:00</p>
+                <p>Miércoles: 12:00 - 16:00 | 16:00 - 20:00</p>
+                <p>Jueves 12:00 - 16:00 | 16:00 - 20:00</p>
+                <p>Viernes: 12:00 - 16:00 | 16:00 - 20:00</p>
+            </div>
+        </div>
+
+        <div class="semestre" id="semestre2">
+            <h2 onclick="toggleMaterias('semestre2')">Semestre 2</h2>
+            <ul>
+                <li>Técnicas de preparación de cócteles</li>
+                <li>Decoración y presentación de bebidas</li>
+                <li>Seguridad e higiene en el bar</li>
+            </ul>
+            <div class="horario" id="horario2">
+                <p>Lunes: 12:00 - 16:00 | 16:00 - 20:00</p>
+                <p>	Martes: 12:00 - 16:00 | 16:00 - 20:00</p>
+                <p>Miércoles: 12:00 - 16:00 | 16:00 - 20:00</p>
+                <p>Jueves 12:00 - 16:00 | 16:00 - 20:00</p>
+                <p>Viernes: 12:00 - 16:00 | 16:00 - 20:00</p>
+            </div>
+        </div>
+
+        <div class="semestre" id="semestre3">
+            <h2 onclick="toggleMaterias('semestre3')">Semestre 3</h2>
+            <ul>
+                <li>Gestión de inventario y costos</li>
+                <li>Creación de menús de cócteles</li>
+            </ul>
+            <div class="horario" id="horario3">
+                <p>Lunes: 12:00 - 16:00 | 16:00 - 20:00</p>
+                <p>	Martes: 12:00 - 16:00 | 16:00 - 20:00</p>
+                <p>Miércoles: 12:00 - 16:00 | 16:00 - 20:00</p>
+                <p>Jueves 12:00 - 16:00 | 16:00 - 20:00</p>
+                <p>Viernes: 12:00 - 16:00 | 16:00 - 20:00</p>
+            </div>
+        </div>
+
+        <div class="semestre" id="semestre4">
+            <h2 onclick="toggleMaterias('semestre4')">Semestre 4</h2>
+            <ul>
+                <li>Atención al cliente y servicio de bar</li>
+                <li>Marketing y promoción de eventos de bar</li>
+            </ul>
+            <div class="horario" id="horario4">
+                <p>Lunes: 12:00 - 16:00 | 16:00 - 20:00</p>
+                <p>	Martes: 12:00 - 16:00 | 16:00 - 20:00</p>
+                <p>Miércoles: 12:00 - 16:00 | 16:00 - 20:00</p>
+                <p>Jueves 12:00 - 16:00 | 16:00 - 20:00</p>
+                <p>Viernes: 12:00 - 16:00 | 16:00 - 20:00</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMaterias(semestre) {
+            var semestreElement = document.getElementById(semestre);
+            var materias = semestreElement.getElementsByTagName('ul')[0];
+            var horario = semestreElement.getElementsByClassName('horario')[0];
+            materias.style.display = (materias.style.display === 'none') ? 'block' : 'none';
+            horario.classList.toggle('active');
+        }
+    </script>
+
+</body></html>
